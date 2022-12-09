@@ -1,10 +1,13 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
-  height: 40vmin;
+
   pointer-events: none;
+  width: 30vw;
+  
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -24,6 +27,32 @@
   color: white;
 }
 
+.header {
+
+  background-color: black;
+
+}
+
+
+/* Page content */
+.content {
+  padding: 50px;
+  padding-top: 150px;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+  
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
 .App-link {
   color: #61dafb;
 }
@@ -36,3 +65,143 @@
     transform: rotate(360deg);
   }
 }
+
+/* .App-img {
+
+ border: 2px solid black;
+ width: 40vw;
+ margin-bottom: 20px;
+ padding: 10px;
+ margin-left: 25px;
+ padding-bottom: 30px;
+ padding-top: 40px;
+ ;
+
+} */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right:4px;
+  padding-left: 20vw;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+    
+  }
+
+  
+ 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+ul {
+  display: block;
+  
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.ul-display { 
+  display: flex;
+ justify-content: center;
+  gap: 50px;
+  border-bottom: 2px solid black;
+ padding-bottom: 15px;
+ padding-left: 0;
+ padding-right: 0;
+  
+}
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; color: gray}
+
+
+a:hover { text-decoration: none; color: lightgray}
+
+a[href^="mailto:"]
+{ 
+
+  color: grey;
+
+}
+
+
+a:active { text-decoration: none; }
+
+.about-container {
+
+  margin-left: 5vw;
+  margin-right: 5vw;
+
+}
+
+.about-image {
+  height: 30vh;
+ 
+}
+.about-image-two {
+  height: 20vh;
+ 
+}
+
