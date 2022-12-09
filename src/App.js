@@ -6,7 +6,7 @@ function App() {
   <div className="App container ">
   
 
-<FadeIn><div className='black'></div></FadeIn>
+<div className='black'></div>
     <BrowserRouter>
       <Routes>
         
@@ -59,7 +59,7 @@ function Header(){
 
 function PortfolioGallery() {
   return ( 
-    <FadeIn transitionDuration="1000" delay="100">
+   
     <div className='row content'>
     
       <div className="column">
@@ -205,7 +205,7 @@ function PortfolioGallery() {
 
 
   </div>
-  </FadeIn>
+  
 )
 }
 
@@ -253,7 +253,7 @@ function WelcomePage () {
 
 function Aboutpage(){
   return(
-    <FadeIn transitionDuration="1000" delay="100">
+   
   <div className='about-container content'>
 
     <img className='about-image' src="https://sdk.bitmoji.com/render/panel/f84125e2-0b34-45fb-b2f0-7930ef37ac40-a67a5928-5bce-45a1-8107-550a84a2d2e3-v1.png?transparent=1&palette=1"></img>
@@ -277,7 +277,7 @@ Unless your name is Saura. I'm onto you Saura.</p>
   
               
   </div>
-  </FadeIn>)
+  )
 }
 
 
