@@ -1,10 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { Fade } from 'react-bootstrap';
-
-
-
 function App() {
   return (
   <div className="App container ">
