@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import FadeIn from 'react-fade-in';
+
 import { Fade } from 'react-bootstrap';
 
 
